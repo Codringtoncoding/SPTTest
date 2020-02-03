@@ -1,7 +1,7 @@
 class Parser
   def initialize(file_path)
     @file_path = File.exist?(file_path) ? file_path : "File path doesn't exist"
-    # @file_path = file_path
+    @file_path = "../SPTTest/webserver.log"
     @occurances = Hash.new(0)
     @uniqueness = Hash.new {|h,k| h[k]=[]}
   end
